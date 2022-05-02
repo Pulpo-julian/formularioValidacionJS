@@ -269,6 +269,7 @@ var todasCiudades = [
 
 
 function cambiarCiudad() {
+
     var pais = document.form1.pais[document.form1.pais.selectedIndex].value;
 
     if (pais != 0) {
@@ -310,7 +311,7 @@ const expresiones = {
 	telefono:/^\d{10,15}$/
 }
 
-const validarFormulario=(e) =>{
+const validarFormulario = (e) =>{
     switch(e.target.name){
         case "nombres":
             if(expresiones.nombre.test(e.target.value)){
