@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Academy</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <div class="cabecera">
+
+        <div class="logo">
+            <img src="img/sena-logo.png" alt="LOGO">
+        </div>
+
+        <div class="lista">
+            <ul>
+                <li>
+                    <a href="#">item1</a>
+                </li>
+                <li>
+                    <a href="#">item2</a>
+                </li>
+                <li>
+                    <a href="#">item3</a>
+                </li>
+                <li>
+                    <a href="#">item4</a>
+                </li>
+                <li>
+                    <a href="#">item5</a>
+                </li>
+                <li>
+                    <a href="#">item6</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="usuario">
+            <img src="img/user.png" alt="USER">
+            <p>
+                USUARIO ACTIVO
+            </p>
+        </div>
+
+
+    </div>
+
+
+    <div class="content">
+
+        <h1 class="tittle">Formulario de inscripcion</h1>
+
+        <div class="form">
+
+            <form action="" name="form1" id="form1">
+
+                <!-- nombres -->
+                <div class="formulario__grupo" id="grupo__nombres">
+                    <label for="nombres" class="formulario__label">Nombres</label>
+
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="nombres" id="nombres" placeholder="Sus nombres" pattern="[A-Za-z]{10,40}">
+                        
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El numero de caracteres del nombre debe ser de 4 a 16.</p>
+                </div>
+
+                <!-- apellidos -->
+                <div class="formulario__grupo" id="grupo__apellidos">
+                    <label for="apellidos" class="formulario__label">Apellidos</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Sus apellidos" pattern="[A-Za-z]{10,40}">
+                        
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El numero de caracteres de los apellidos debe ser de 4 a 16.</p>
+                </div>
+
+                <!-- alias -->
+                <div class="formulario__grupo" id="grupo__alias">
+                    <label for="alias" class="formulario__label">Alias</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="alias" id="alias" placeholder="Apodo/alias" pattern="[A-Za-z0-9]{20}">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+                </div>
+
+                <!-- Edad -->
+                <div class="formulario__grupo" id="grupo__edad">
+                    <label for="edad" class="formulario__label">Edad</label>
+                    <div class="formulario__grupo-input">
+                        <input type="number" name="edad" id="edad" placeholder="Su edad" min="13" max="99"> 
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+                </div>
+
+                <!-- fecha nacimiento -->
+                <div class="formulario__grupo" id="grupo__fecha-nacimiento">
+                    <label for="fechaNac" class="formulario__label">Fecha de nacimiento</label>
+                    <div class="formulario__grupo-input">
+                        <input type="date" name="fechaNac" id="fechaNac">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+                </div>
+
+                <!-- lugar de nacimiento -->
+                <div class="formulario__grupo" id="grupo__lugar-nacimiento">
+
+                    <label for="lugarNac" class="formulario__label">Lugar de nacimiento</label>
+
+                    <div class="formulario__grupo-input">
+
+                        <input type="text" name="lugarNac" id="lugarNac" placeholder="Lugar de Nacimiento" pattern="[A-Za-z \,?]{10,100}">
+
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                       
+                    </div>
+
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+
+                </div>
+
+                <!-- Direccion -->
+                <div class="formulario__grupo" id="grupo__direccion">
+
+                    <label for="direccion" class="formulario__label">Direccion</label>
+
+                    <div class="formulario__grupo-input">
+
+                        <input type="text" id="direccion" required pattern="[A-Za-z0-9 \#*\-\,*]{10-100}" title="puede escribir: #-," placeholder="Calle 15 #20 Apto 205, Torre 5, int 6">
+
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                    </div>
+
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+
+
+                </div>
+
+                <!-- postal -->
+                <div class="formulario__grupo" id="grupo__postal">
+
+                    <label for="codPostal" class="formulario__label">Codigo Postal</label>
+
+                    <div class="formulario__grupo-input">
+
+                        <input type="text" name="codPostal" id="codPostal" pattern="[0-9]{5}">
+
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                    </div>
+
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+                    
+                </div>
+                
+                <p>
+                    <p>Genero:</p>
+                    <input type="checkbox" name="opcion1" id="opcion1" value="masculino">
+                    <label for="opcion1">Masculino</label>
+                    <input type="checkbox" name="opcion2" id="opcion2" value="femenino">
+                    <label for="opcion2">Femenino</label>
+                </p>
+                
+                <!-- profesion -->
+                <div class="formulario__grupo" id="grupo__profesion">
+                    
+                    <label for="profesion" class="formulario__label">Profesion</label>
+                    
+                    <div class="formulario__grupo-input">
+                        
+                        <input type="text" name="profesion" id="profesion" pattern="[A-Za-z]{10,40}">
+                        
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        
+                    </div>
+                    
+                    <p class="formulario__input-error">El numero de caracteres del alias debe ser de 4 a 16.</p>
+
+                </div>
+
+
+                <!-- correo -->
+                <div class="formulario__grupo" id="grupo__correo">
+
+                    <label for="coElec" class="formulario__label">Correo Electronico</label>
+
+                    <div class="formulario__grupo-input">
+                        <input type="email" name="coElec" class="formulario_input" id="coElec" required placeholder="camilogomez@gmail.com" title="ingrese su correo">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+
+                </div>
+                
+                <!-- lista de pais y ciudad -->
+                <p>
+                    <p>Seleccione su Pais</p>
+                    <select name="pais" id="" class="paises" onchange="cambiarCiudad()">
+                        <option value="0">Seleccione..</option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Bolivia</option>
+                        <option value="3">Brasil</option>
+                        <option value="4">Chile</option>
+                        <option value="5">Colombia</option>
+                        <option value="6">Ecuador</option>
+                        <option value="7">Guayana</option>
+                        <option value="8">Paraguay</option>
+                        <option value="9">Peru</option>
+                        <option value="10">Uruguay</option>
+                        <option value="11">Venezuela</option>
+                    </select>
+                </p>
+                <p>
+                    <p>Seleccione su Ciudad</p>
+                    <select name="ciudad" id="">
+                        <option value=" - ">  -  </option>
+                    </select>
+                </p>
+
+                <!-- telefono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telMovil" class="formulario__label">Telefono Movil</label>
+
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="telMovil"  class="formulario__input" id="telMovil" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+
+                </div>
+
+
+                <p>
+                    <label for="foto">Subir Fotografia</label>
+                    <input type="file" name="foto" id="foto">
+                </p>
+                <p>
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                </p>
+            </form>
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+LIMITES
+
+\b limite de palabras
+\B no es un limite de palabras
+$ final de una cadena de palabras
+^ es el inicio de una cadena de caracteres
+
+CUANTIFICADORES
+
+* 0 o mas elementos
+{#} numero exacto de elementos
+{#1, #2} para generar un rango -- primer numero es el minimo y el segundo el maximo--
+?
+
+HERRAMIENTAS 
+Regexr (testing de expresiones)
+Debuggex (creacion grafica)
+
+Rubular (editor de expresiones regulares)
+RegexBuddy 
+RegExplained
+
+ATRIBUTOS o PROPIEDAD:
+maxLength (# maximo de caracteres)
+minLength (# minimo de caracteres)
+min (admite un minimo en cualquier dato fecha, hora, numero)
+max (admite un maximo en cualquier dato fecha, hora, numero)
+step (variable iteradora que admite un valor para hacer pasos)
+required (volores requeridos)
+disable (para deshabilitar campos)
+readonly
+writeonly
+edit
+
+/
+
